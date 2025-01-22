@@ -9,7 +9,7 @@ function exibirTexto(tag, texto){
     if('speechSynthesis' in window){
         let fala = new SpeechSynthesisUtterance(texto);
         fala.lang = 'pt-BR';
-        fala.rate = 0.5;
+        fala.rate = 2.0;
         window.speechSynthesis.speak(fala);
     } else {
         console.log('Não foi possível falar!');
